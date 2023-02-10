@@ -20,6 +20,9 @@
   body {
     background-color: whitesmoke;
   }
+
+  a {color: black;
+  }
   
   div#main-div {
     position: static;
