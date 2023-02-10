@@ -1,0 +1,505 @@
+  /*
+  serif font: https://fonts.google.com/specimen/Source+Serif+Pro
+  sans serif font: https://fonts.google.com/specimen/Source+Sans+Pro
+  */
+  
+  /*
+  lg - css for screens greater than 1200px wide
+  */
+  
+  @font-face {
+    font-family: mySerifFont;
+    src: url(../fonts/SourceSerifPro-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: mySansFont;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+  }
+  
+  body {
+    background-color: whitesmoke;
+  }
+  
+  div#main-div {
+    position: static;
+    box-sizing: border-box;
+    background-color: black;
+    height: auto;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header {
+    align-items: center;
+  }
+  
+  nav {
+    position: static;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    line-height: 100px;
+    display: inline;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: mySansFont, sans-serif;
+  }
+  
+  nav li a {
+    line-height: 50px;
+    width: 80px;
+    font-size: 16px;
+    color: black;
+    background-color: lightgray;
+    display: inline-block;
+  }
+  
+  nav li a:hover {
+    color: black;
+    background-color: darkgray;
+  }
+  
+  nav a#active {
+    color: whitesmoke;
+    background-color: gray;
+  }
+  
+  div#flex-div {
+    position: static;
+    box-sizing: border-box;
+    /* change background-color */
+    background-color: lightgray;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  article {
+    position: static;
+    box-sizing: border-box;
+    /* change background-color */
+    background-color: white;
+    min-height: 100%;
+    width: 300px;
+    padding: 25px 25px 25px 25px;
+  }
+
+  article#resume {
+    position: static;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  article#ps {
+    position: static;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  article#ai {
+    position: static;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  article#css {
+    position: static;
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  h1, h2, h3, p, figcaption {
+    color: #313b07;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: mySerifFont, serif;
+  }
+  
+  p, li, small, figcaption {
+    font-family: mySansFont, sans-serif;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-top: 0px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4, p, li {
+    font-size: 16px;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .margin-2 {
+    margin-top: 15px;
+    margin-bottom: -10px;
+  }
+
+  .margin-3, .margin-4 {
+    margin-bottom: -10px;
+  }
+
+  footer {
+    position: static;
+    box-sizing: border-box;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  small {
+    font-size: 10px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  img#img-lg {
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  /* begin fixed position div */
+
+  /*
+  div#top {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    line-height: 200px;
+    text-align: center;
+  }
+  */
+
+  /* end fixed position div */
+
+    /* begin relative position div */
+
+    div#circle {
+      position: relative;
+      z-index: 50;
+      height: 700px;
+      width: 700px;
+      background: conic-gradient(rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+      border-radius: 50%;
+    }
+
+    /* end relative position div */
+
+    /* begin applies to all absolute position divs */
+
+    div#red, div#yellow, div#green, div#cyan, div#blue, div#magenta {
+      position: absolute;
+      z-index: 100;
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      font-size: 21px;
+      line-height: 140px;
+      text-align: center;
+    }
+
+    /* end applies to all absolute position divs */
+
+    /*  begin absolute position divs */
+
+    div#red {
+      z-index: 200;
+      top: 175px;
+      left: 280px;
+      color: rgb(0, 255, 255);
+      background-image: url("../images/red.jpg");
+    }
+
+    div#yellow {
+      top: 238px;
+      right: 185.5px;
+      color: rgb(0, 0, 255);
+      background-image: url("../images/yellow.jpg");
+    }
+
+    div#green {
+      z-index: 200;
+      bottom: 220.5px;
+      right: 185.5px;
+      color: rgb(255, 0, 255);
+      background-image: url("../images/green.jpg");
+    }
+
+    div#cyan {
+      bottom: 175px;
+      left: 280px;
+      color: rgb(255, 0, 0);
+      background-image: url("../images/cyan.jpg");
+    }
+
+    div#blue {
+      z-index: 200;
+      bottom: 220.5px;
+      left: 185.5px;
+      color: rgb(255, 255, 0);
+      background-image: url("../images/blue.jpg");
+    }
+
+    div#magenta {
+      top: 238px;
+      left: 185.5px;
+      color: rgb(0, 255, 0);
+      background-image: url("../images/magenta.jpg");
+    }
+
+    /* end absolute position divs */
+
+  /*
+  md - css for screens between 768px wide and 1199px wide
+  */
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    div#main-div {
+      width: 100%;
+    }
+
+    article {
+      width: 50%;
+    }
+
+    article#resume {
+      width: 100%;
+    }
+
+    img {
+      height: 200px;
+    }
+
+    /* begin relative position div */
+
+    div#circle {
+      position: relative;
+      z-index: 50;
+      height: 700px;
+      width: 700px;
+      background: conic-gradient(rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+      border-radius: 50%;
+    }
+
+    /* end relative position div */
+
+    /* begin applies to all absolute position divs */
+
+    div#red, div#yellow, div#green, div#cyan, div#blue, div#magenta {
+      position: absolute;
+      z-index: 100;
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      font-size: 21px;
+      line-height: 140px;
+      text-align: center;
+    }
+
+    /* end applies to all absolute position divs */
+
+    /*  begin absolute position divs */
+
+    div#red {
+      z-index: 200;
+      top: 175px;
+      left: 280px;
+      color: rgb(0, 255, 255);
+      background-image: url("../images/red.jpg");
+    }
+
+    div#yellow {
+      top: 238px;
+      right: 185.5px;
+      color: rgb(0, 0, 255);
+      background-image: url("../images/yellow.jpg");
+    }
+
+    div#green {
+      z-index: 200;
+      bottom: 220.5px;
+      right: 185.5px;
+      color: rgb(255, 0, 255);
+      background-image: url("../images/green.jpg");
+    }
+
+    div#cyan {
+      bottom: 175px;
+      left: 280px;
+      color: rgb(255, 0, 0);
+      background-image: url("../images/cyan.jpg");
+    }
+
+    div#blue {
+      z-index: 200;
+      bottom: 220.5px;
+      left: 185.5px;
+      color: rgb(255, 255, 0);
+      background-image: url("../images/blue.jpg");
+    }
+
+    div#magenta {
+      top: 238px;
+      left: 185.5px;
+      color: rgb(0, 255, 0);
+      background-image: url("../images/magenta.jpg");
+    }
+
+    /* end absolute position divs */
+
+  }
+
+  /*
+  sm - css for screens less than 768px wide
+  */
+
+  @media screen and (max-width: 767px) {
+
+    div#main-div {
+      width: 100%;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    img {
+      height: 384px;
+    }
+
+    img#img-lg {
+      height: auto;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* begin relative position div */
+
+    div#circle {
+      position: relative;
+      z-index: 50;
+      height: 400px;
+      width: 400px;
+      background: conic-gradient(rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+      border-radius: 50%;
+    }
+
+    /* end relative position div */
+
+    /* begin applies to all absolute position divs */
+
+    div#red, div#yellow, div#green, div#cyan, div#blue, div#magenta {
+      position: absolute;
+      z-index: 100;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 80px;
+      text-align: center;
+    }
+
+    /* end applies to all absolute position divs */
+
+    /*  begin absolute position divs */
+
+    div#red {
+      z-index: 200;
+      top: 100px;
+      left: 160px;
+      color: rgb(0, 255, 255);
+      background-image: url("../images/red.jpg");
+    }
+
+    div#yellow {
+      top: 136px;
+      right: 106px;
+      color: rgb(0, 0, 255);
+      background-image: url("../images/yellow.jpg");
+    }
+
+    div#green {
+      z-index: 200;
+      bottom: 122px;
+      right: 106px;
+      color: rgb(255, 0, 255);
+      background-image: url("../images/green.jpg");
+    }
+
+    div#cyan {
+      bottom: 100px;
+      left: 160px;
+      color: rgb(255, 0, 0);
+      background-image: url("../images/cyan.jpg");
+    }
+
+    div#blue {
+      z-index: 200;
+      bottom: 122px;
+      left: 106px;
+      color: rgb(255, 255, 0);
+      background-image: url("../images/blue.jpg");
+    }
+
+    div#magenta {
+      top: 136px;
+      left: 106px;
+      color: rgb(0, 255, 0);
+      background-image: url("../images/magenta.jpg");
+    }
+
+    /* end absolute position divs */
+
+  }

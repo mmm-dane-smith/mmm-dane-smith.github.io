@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> CSS Composition </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onresize="showBrowserSize();" onload="showBrowserSize();">
+
+  <div id="main-div">
+
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="fp_home.html">Home</a>
+          </li>
+          <li>
+            <a href="fp_resume.html">Resume</a>
+          </li>
+          <li>
+            <a href="fp_ps.html">PS</a>
+          </li>
+          <li>
+            <a href="fp_ai.html">AI</a>
+          </li>
+          <li>
+            <a id="active" href="fp_css.html">CSS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="flex-div">
+      <article id="css">
+        <h1>
+          CSS
+        </h1>
+        <figure>
+          <div id="circle">
+            <div id="red">Red
+            </div>
+            <div id="yellow">Yellow
+            </div>
+            <div id="green">Green
+            </div>
+            <div id="cyan">Cyan
+            </div>
+            <div id="blue">Blue
+            </div>
+            <div id="magenta">Magenta
+            </div>
+          </div> <!-- end circle div -->
+          <figcaption>
+            <br>&copy; Dane Smith (code)<br>&copy; unSplash (images)
+          </figcaption>
+        </figure>
+        <h2>
+          Color Wheel
+        </h2>
+        <p>
+          The circles closest to the user are the primary colors: red, green, and blue. These circles have images that
+          relate to their respective potion of the color wheel: red—berries, green—space, and blue—water. Each circle is
+          labeled with its text in its complements color.
+        </p>
+        <p>
+          The circles just beneath the primary colors are the secondary colors: yellow, cyan, and magenta. These circles
+          have images that relate to their respective potion of the color wheel: yellow—flowers, cyan— day sky,
+          magenta—night sky. Each circle is labeled with its text in its complements color.
+        </p>
+        <p>
+          The lowest circle is the color wheel, which has every color within it.
+        </p>
+      </article>
+    </div> <!-- end flex-div -->
+
+    <footer>
+      <small>
+        &copy; 2021 Dane Smith (code) &copy; Unsplash (images)
+      </small>
+    </footer>
+
+  </div> <!-- end main-div -->
+
+  <div id="sizeInfo"></div>
+
+</body>
+
+</html>
